@@ -17,15 +17,15 @@ CUSTOM_DOMAIN = "tuqiang103.cn"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.libcuda.so", custom_domain = true },
-#   { pattern = "quay.libcuda.so", custom_domain = true },
-#   { pattern = "gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s-gcr.libcuda.so", custom_domain = true },
-#   { pattern = "k8s.libcuda.so", custom_domain = true },
-#   { pattern = "ghcr.libcuda.so", custom_domain = true },
-#   { pattern = "cloudsmith.libcuda.so", custom_domain = true },
-# ]
+routes = [
+  { pattern = "docker.tuqiang103.cn", custom_domain = true },
+  { pattern = "quay.tuqiang103.cn", custom_domain = true },
+  { pattern = "gcr.tuqiang103.cn", custom_domain = true },
+  { pattern = "k8s-gcr.tuqiang103.cn", custom_domain = true },
+  { pattern = "k8s.tuqiang103.cn", custom_domain = true },
+  { pattern = "ghcr.tuqiang103.cn", custom_domain = true },
+  { pattern = "cloudsmith.tuqiang103.cn", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
